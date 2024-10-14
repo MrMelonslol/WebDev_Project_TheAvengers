@@ -1,88 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../css/style.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>
-            Contact
-        </title>
-    </head>
-    <body>
-        <header>
-            <div>
-                <h1 id="title" class="logo">Winter Wonderscapes</h1>
-            </div>
-            <nav>
-                <ul class="sidebar">
-                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../pages/about.html">About</a></li>
-                    <li><a href="../pages/contact.html">Contact</a></li>
-                </ul>
-                <ul>
-                    <li class="hideOnMobile"><a href="../index.html">Home</a></li>
-                    <li class="hideOnMobile"><a href="../pages/about.html">About</a></li>
-                    <li class="hideOnMobile"><a href="../pages/contact.html">Contact</a></li>
-                    <li class="menu-button" onclick=showSidebar()><a href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-                </ul>
-            </nav>
-        </header>
-    <main>
-            <div style="text-align: center;">
-            If you need to get in contact with me please enter your details and I will be in touch.
-            </div>
-        </h4>
-    <form>
-    <table>
-        <tr>
-            <td>
-                First Name:
-            </td>
-            <td>
-                <input type="text" name="fname">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Last Name:
-            </td>
-            <td>
-                <input type="text" name="lname">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Query:
-            </td>
-            <td>
-                <input type="text" placeholder="Type your Query" name="query">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Email:
-            </td>
-            <td>
-                <input type="text" placeholder="Enter your Email" name="email">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Phone Number:
-            </td>
-            <td>
-                <input type="text" placeholder="Enter your Phone Number" name="phone">
-            </td>
-        </tr>
-    </table>
-    <input type="submit" value="submit">
-    </form>
-    </main>
-    <footer>
-
-    </footer>
-    <script src="../WinterWonderscapes/js/slideshow.js"></script>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<header>
+    <h1 style="text-align: center; color:blue;">Winter Wonderscapes</h1>
+</header>
+<main>
+    <h4 style="text-align: center;">
+        <a href="index.html">Home</a>  &nbsp; &nbsp; &nbsp;
+        <a href="about.html">About</a>  &nbsp; &nbsp; &nbsp;
+        <a href="contact.html">Contact</a>  &nbsp; &nbsp; &nbsp;
+    </h4>
+</main>
+<body>
+    <h4>
+        <div style="text-align: center;">
+            If you need to get in contact with me please enter your details and I will get back to you.
+        </div>
+    </h4>
+<form>
+<table>
+    <tr>
+        <td>
+            First Name:
+        </td>
+        <td>
+            <input type="text" name="fName">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Last Name:
+        </td>
+        <td>
+            <input type="text" name="lName">
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            Email:
+        </td>
+        <td>
+            <input type="text" placeholder="Enter your Email" name="Email">
+        </td>
+    </tr>   <td>     
+        Phone Number:
+    </td></td>
+    <td>
+        <input type="text" placeholder="Enter your Phone Number" name="Phone">
+    </td>
+    </tr>  
+          <td>
+             Query:
+          </td>
+          <td>
+             <textarea id="Query" name="Query" placeholders="Write your query." style="height:100px;"></textarea>
+          </td>
+    </tr>
+</table>
+<input type="submit" value="submit">
+</form>
+</body>
 </html>
