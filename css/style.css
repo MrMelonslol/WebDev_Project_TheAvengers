@@ -7,8 +7,9 @@ body {
 
 header { 
     background-color:white;
-    color: #5fc2ea;
-    padding: 25px;
+    color: #149ceb;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .header-content {
@@ -19,6 +20,9 @@ header {
 
 #title{
     font-family: "Merriweather", serif;
+    font-size: 36px;
+    font-weight: bold;
+    padding-left: 25px;
 }
 
 #infomain{
@@ -40,25 +44,42 @@ header {
 }
 
 .alert {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
     padding: 20px;
-    background-color: #5fc2ea;
-    color: white;
-    margin-bottom: 15px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 4px solid #149ceb;
+    box-sizing: border-box;
+    z-index: 1000;
 }
 
-.closebtn {
+.cookies {
+    font-family: "Merriweather", serif;
+    font-size: 18px;
+    width: 80%;
+    font-weight: bolder;
+}
+
+.acceptbtn, .declinebtn {
     margin-left: 15px;
-    color: white;
+    color: #149ceb;
     font-weight: bold;
     float: right;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 20px;
     cursor: pointer;
     transition: 0.3s;
 }
 
-.closebtn:hover {
-    color: black;
+.acceptbtn:hover, .declinebtn:hover {
+    color: lightskyblue;
 }
 
 nav{
@@ -301,15 +322,39 @@ main {
 }
 
 footer {
-    background-color: #5fc2ea;
-    height: 10vh;
+    background-color: #f9f9f9;
+    height: 15vh;
     width: 100%;
-    padding-top: 8px;
     position: relative;
     bottom: 0;
 }
 
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.subNews {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+}
+
+input[type="submit"] {
+    background-color: lightskyblue;
+    font-weight: bolder;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: lightsalmon;
+}
+
 .footer-image {
-    float: right;
-    margin-right: 20px;
+    padding-top: 0;
 }
