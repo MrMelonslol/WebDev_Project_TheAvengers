@@ -69,6 +69,15 @@ var x = setInterval(function() {
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.getElementById("counter").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    document.getElementById("counter").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";}, 1000);
 
-}, 1000);
+window.onload = function() {
+    if (localStorage.getItem('cookieConsent') === 'accepted' || localStorage.getItem('cookieConsent') === 'declined') {
+        document.getElementById('cookieAlert').style.display = 'none';
+    }
+};
+
+function hideAlert(choice) {
+    localStorage.setItem('cookieConsent', choice);
+    document.getElementById('cookieAlert').style.display = 'none';
+}
