@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Niseko</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="sidebar">
+          <li onclick="hideSidebar()">
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#5f6368"
+              >
+                <path
+                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                /></svg
+            ></a>
+          </li>
+          <li id="title">Winter Wonderscapes</li>
+          <li><a href="../index.html">Home</a></li>
+          <li id="dropdown">
+            <a href="#">Destinations</a>
+            <ul id="dropdown-content">
+              <li><a href="../pages/lesarcsinfo.html">Les Arcs</a></li>
+              <li><a href="../pages/snowmassinfo.html">Snowmass</a></li>
+              <li><a href="../pages/niseko.html">Niseko</a></li>
+            </ul>
+          </li>
+          <li><a href="../pages/about.html">About</a></li>
+          <li><a href="../pages/contact.html">Contact</a></li>
+        </ul>
+        <ul>
+          <li id="title">Winter Wonderscapes</li>
+          <li class="hideOnMobile"><a href="../index.html">Home</a></li>
+          <li class="hideOnMobile" id="dropdown">
+            <a href="#">Destinations</a>
+            <ul id="dropdown-content">
+              <li><a href="../pages/lesarcsinfo.html">Les Arcs</a></li>
+              <li><a href="../pages/snowmassinfo.html">Snowmass</a></li>
+              <li><a href="../pages/niseko.html">Niseko</a></li>
+              <li
+            </ul>
+          </li>
+          <li class="hideOnMobile"><a href="../pages/about.html">About</a></li>
+          <li class="hideOnMobile">
+            <a href="../pages/contact.html">Contact</a>
+          </li>
+          <li class="menu-button" onclick="showSidebar()">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#5f6368"
+              >
+                <path
+                  d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                /></svg
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <hr />
+      </section>
+    </header>
+    <main>
+      <img
+        src="../images/Niseko.jpg"
+        class="imgabout"
+        alt="Picture of Niseko"
+      />
+      <div class="info1">
+        <p>
+          This is Niseko, a top-rated destination on our website. Nestled on
+          Japan's northern island of Hokkaido, it's famous for its vast ski
+          resort, offering diverse trails for beginners to seasoned pros.
+          Renowned for its powder snow, Niseko is a paradise for winter sports
+          enthusiasts and nature lovers alike. A truly ideal winter wonderland."
+        </p>
+        <br />
+      </div>
+      <div class="info2">
+        <h3>Client story</h3>
+        <br />
+        <p>
+          Niseko has always been a hugely popular tourist destination. Last
+          winter, one of our clients visited solo, driving herself through the
+          scenic roads to Hokkaido and spending nine days exploring in January.
+          She absolutely loved it, recommending Niseko highly, as she made
+          lifelong friends there and is already planning her next winter holiday
+          with us.
+        </p>
+      </div>
+    </main>
+    <footer>
+      <section>
+        <hr />
+      </section>
+      <div class="footer-content">
+        <form class="subNews">
+          Subscribe to our newsletter:
+          <input type="text" placeholder="Enter Your Email" name="Subscribe" />
+          <input type="submit" value="submit" />
+        </form>
+        <a href="#" class="footer-image"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="48px"
+            viewBox="0 -960 960 960"
+            width="48px"
+            fill="#5f6368"
+          >
+            <path
+              d="M400-320h160q17 0 28.5-11.5T600-360v-80h-80v40h-80v-160h80v40h80v-80q0-17-11.5-28.5T560-640H400q-17 0-28.5 11.5T360-600v240q0 17 11.5 28.5T400-320Zm80 240q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+            /></svg
+        ></a>
+      </div>
+    </footer>
+    <script src="../js/slideshow.js"></script>
+  </body>
+</html>
