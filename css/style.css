@@ -391,6 +391,11 @@ footer {
     font-size: 20px;
 }
 
+.contable {
+    padding-top: 7px;
+    margin-top: 10px;
+}
+
 input[type="submit"] {
     background-color: lightskyblue;
     font-weight: bolder;
