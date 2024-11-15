@@ -258,6 +258,21 @@ nav li:first-child{
     display: block;
 }
 
+#SBani {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    animation: snow 10s infinite;
+    animation-direction: reverse;
+}
+
+@keyframes snow {
+    0% {left: 0%;transform: scaleX(1)}
+    50% {left: 95%;transform: scaleX(1)}
+    51% {transform: scaleX(-1);}
+    100% {left: 0%; transform: scaleX(-1);}
+}
+
 .slideshow-container {
     max-width: 60%;
     height: 60%;
@@ -402,10 +417,14 @@ input[type="submit"] {
     font-size: 16px;
     padding: 5px;
     border-radius: 10px;
+    width: 80px;
+    transition: width 2s;
 }
 
 input[type="submit"]:hover {
     background-color: lightsalmon;
+    transition: 2s;
+    width: 150px;
 }
 
 .footer-image {
