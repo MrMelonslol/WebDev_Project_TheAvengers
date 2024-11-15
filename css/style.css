@@ -70,7 +70,7 @@ header {
 .acceptbtn, .declinebtn {
     margin-left: 15px;
     color: #149ceb;
-    font-weight: bold;
+    font-weight: bolder;
     float: right;
     font-size: 18px;
     line-height: 20px;
