@@ -148,6 +148,23 @@ nav li:first-child{
     display: none;
 }
 
+.dark-mode, .dark-mode .numbertext, .dark-mode .info1 {
+    background-color: #15202b;
+    color: white;
+}
+
+.dark-mode a {
+    color: white;
+}
+
+.dark-mode a:hover{
+    background-color: #494949;
+}
+
+.dark-mode nav, .dark-mode header, .dark-mode footer {
+    background-color: #15202b;
+}
+
 @media(max-width: 600px){
     .hideOnMobile{
         display: none;
@@ -324,7 +341,7 @@ nav li:first-child{
 }
 
 .numbertext {
-    color: white;
+    color: black;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
@@ -371,7 +388,7 @@ main {
     font-family: sans-serif;
     border-radius: 50px;
     margin-top: 20px;
-    color: #494949;
+    color: black;
 }
 
 .info2 {
