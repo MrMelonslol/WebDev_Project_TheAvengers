@@ -451,3 +451,8 @@ input[type="submit"]:hover {
 .required-field {
     color: red;
 }
+
+.error-message {
+    display: none;
+    color: red;
+}

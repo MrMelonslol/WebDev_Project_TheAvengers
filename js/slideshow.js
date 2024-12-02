@@ -96,3 +96,13 @@ function hideAlert(choice) {
     localStorage.setItem('cookieConsent', choice);
     document.getElementById('cookieAlert').style.display = 'none';
 }
+
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const errorMessages = document.querySelectorAll(".error-message");
+    errorMessages.forEach(function(message) {
+        message.style.display = "none";
+    });
+    
+});
