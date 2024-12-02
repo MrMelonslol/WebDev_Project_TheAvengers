@@ -76,47 +76,48 @@
         </section>
         <br>
         <form>
+            <p>
+                If you need to contact us:
+            </p>
             <table>
                 <tr>
                     <td>
-                        First Name:
+                        <label for="fName">First Name:<span class="required-field">*</span></label>
                     </td>
                     <td>
-                      <input class="contable" type="text" placeholder="Enter your First name" name="fName" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Last Name:
-                    </td>
-                    <td>
-                      <input class="contable" type="text" placeholder="Enter your last name" name="lName" />
+                      <input id="fName" class="contable" type="text" placeholder="Enter your First name" required aria-required="true">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        Email:
+                        <label for="lName">Last Name:<span class="required-field">*</span></label>
                     </td>
                     <td>
-                      <input class="contable" type="text" placeholder="Enter your Email" name="Email" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Phone Number:
-                    </td>
-                    <td>
-                        <input class="contable" type="text" placeholder="Enter your Phone Number" name="Phone">
+                      <input id="lName" class="contable" type="text" placeholder="Enter your last name" required aria-required="true">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label for="Query">Query:</label>
+                        <label for="Email">Email:<span class="required-field">*</span></label>
                     </td>
                     <td>
-                        <textarea
-                            class="contable" type="text" placeholder="Enter your query" rows="3">
-                        </textarea>
+                      <input id="Email" class="contable" type="email" placeholder="Enter your Email" required aria-required="true">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Phone">Phone Number:<span class="required-field">*</span></label>
+                    </td>
+                    <td>
+                        <input id="Phone" class="contable" type="tel" placeholder="Enter your Phone Number" required aria-required="true">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Query">Query:<span class="required-field">*</span></label>
+                    </td>
+                    <td>
+                        <textarea id="Query" class="contable" placeholder="Enter your Query" rows="3" required aria-required="true"></textarea>
                     </td>
                 </tr>
             </table>
@@ -130,7 +131,7 @@
             <div class="footer-content">
                 <form class="subNews">
                     Subscribe to our newsletter:
-                    <input type="text" placeholder="Enter Your Email" name="Subscribe">
+                    <input type="text" placeholder="Enter Your Email" name="Subscribe" aria-required="false">
                     <input type="submit" value="submit">
                 </form>
                 <a href="#" class="footer-image"><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#5f6368"><path d="M400-320h160q17 0 28.5-11.5T600-360v-80h-80v40h-80v-160h80v40h80v-80q0-17-11.5-28.5T560-640H400q-17 0-28.5 11.5T360-600v240q0 17 11.5 28.5T400-320Zm80 240q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg></a>
