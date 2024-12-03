@@ -114,7 +114,7 @@ function validateForm() {
         isValid = false;
     }
     
-    let emailRegex = /^[^s@]+[^\s@]+\.[^\s@]+$/;
+    let emailRegex = /^[^s@]+@[^\s@]+\.[^\s@]+$/;
     if (email === "") {
         document.getElementById("email-error").innerText = "Email is a required field";
         isValid = false;
