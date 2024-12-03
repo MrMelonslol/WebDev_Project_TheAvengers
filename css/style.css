@@ -453,6 +453,7 @@ input[type="submit"]:hover {
 }
 
 .error-message {
-    display: none;
     color: red;
+    font-size: 16px;
+    margin-bottom: 5px;
 }

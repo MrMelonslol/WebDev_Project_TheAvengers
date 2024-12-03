@@ -97,12 +97,37 @@ function hideAlert(choice) {
     document.getElementById('cookieAlert').style.display = 'none';
 }
 
-document.getElementById("contact-form").addEventListener("submit", function(event) {
-    event.preventDefault();
+function validateForm() {
 
-    const errorMessages = document.querySelectorAll(".error-message");
-    errorMessages.forEach(function(message) {
-        message.style.display = "none";
-    });
+    document.getElementById("fName-error").innerText = "";
+    document.getElementById("email-error").innerText = "";
+    document.getElementById("query-error").innerText = "";
+
+    let fName = document.getElementById("fName").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let query = document.getElementById("query").value.trim();
+
+    let isValid = true;
+
+    if (fName === "") {
+        document.getElementById("fName-error").innerText = "First name is a required field";
+        isValid = false;
+    }
     
-});
+    let emailRegex = /^[^s@]+[^\s@]+\.[^\s@]+$/;
+    if (email === "") {
+        document.getElementById("email-error").innerText = "Email is a required field";
+        isValid = false;
+    }
+    else if (!emailRegex.test(email)) {
+        document.getElementById("email-error").innerText = "Please enter a valid email address";
+        isValid = false;
+    }
+
+    if (query === "") {
+        document.getElementById("query-error").innerText = "Query is a required field";
+        isValid = false;
+    }
+
+    return isValid;
+}

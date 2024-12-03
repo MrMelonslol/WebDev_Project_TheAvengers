@@ -75,7 +75,7 @@
             <hr>
         </section>
         <br>
-        <form id="contact-form">
+        <form onsubmit="return validateForm()">
             <p>
                 If you need to contact us:
             </p>
@@ -85,8 +85,8 @@
                         <label for="fName">First Name:<span class="required-field">*</span></label>
                     </td>
                     <td>
-                      <input id="fName" class="contable" type="text" placeholder="Enter your First name" required aria-required="true" aria-describedby="fNameError">
-                      <span id="fNameError" class="error-message" role="alert">First name is a required field</span>
+                      <input id="fName" class="contable" type="text" placeholder="Enter your First name"  aria-required="true">
+                      <div id="fName-error" class="error-message" aria-live="polite"></div>
                     </td>
                 </tr>
                 <tr>
@@ -99,28 +99,28 @@
                 </tr>
                 <tr>
                     <td>
-                        <label for="Email">Email:<span class="required-field">*</span></label>
+                        <label for="email">Email:<span class="required-field">*</span></label>
                     </td>
                     <td>
-                      <input id="Email" class="contable" type="email" placeholder="Enter your Email" required aria-required="true" aria-describedby="emailError">
-                      <span id="emailError" class="error-message" role="alert">Email is a required field</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="Phone">Phone Number:&nbsp;&nbsp;</label>
-                    </td>
-                    <td>
-                        <input id="Phone" class="contable" type="tel" placeholder="Enter your Phone Number" aria-required="false">
+                      <input id="email" class="contable" type="email" placeholder="Enter your Email" aria-required="true">
+                      <div id="email-error" class="error-message" aria-live="polite"></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label for="Query">Query:<span class="required-field">*</span></label>
+                        <label for="phone">Phone Number:&nbsp;&nbsp;</label>
                     </td>
                     <td>
-                        <textarea id="Query" class="contable" placeholder="Enter your Query" rows="3" required aria-required="true" aria-describedby="queryError"></textarea>
-                        <span id="queryError" class="error-message" role="alert">Query is a required field</span>
+                        <input id="phone" class="contable" type="tel" placeholder="Enter your Phone Number" aria-required="false">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="query">Query:<span class="required-field">*</span></label>
+                    </td>
+                    <td>
+                        <textarea id="query" class="contable" placeholder="Enter your Query" rows="3" aria-required="true"></textarea>
+                        <div id="query-error" class="error-message" aria-live="polite"></div>
                     </td>
                 </tr>
             </table>
